@@ -155,7 +155,7 @@ function Navbar() {
       <Container>
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/Photos/dalatech-logo.png" alt="DalaTech" className="h-9 w-9 rounded-xl object-cover" />
+            <img src="/Photos/dalatech-logo.png" alt="DalaTech" className="h-9 w-9 rounded-full object-cover" />
             <span className="text-sm font-semibold tracking-tight text-zinc-900">
               {t('nav.brand')}
             </span>
