@@ -1,0 +1,354 @@
+{
+  "nav": {
+    "brand": "DalaTech",
+    "features": "Features",
+    "howItWorks": "How it works",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "getDemo": "Get a free demo"
+  },
+  "hero": {
+    "badge": "AI-powered websites for businesses",
+    "title": "Professional websites with AI chatbots and voice agents.",
+    "description": "Automate repetitive customer questions, respond instantly 24/7, and reduce workload — without adding staff. Built for small to medium-sized businesses and growing teams.",
+    "buttons": {
+      "getDemo": "Get a free demo",
+      "seeWork": "See our work"
+    },
+    "tech": "Built with modern technology"
+  },
+  "features": {
+    "section": "FEATURES",
+    "title": "Everything you need to automate customer communication",
+    "description": "We build modern websites with integrated AI that handle common questions, product inquiries, and basic support — so your team can focus on what matters.",
+    "chatbot": {
+      "title": "Website + AI Chatbot",
+      "badge": "Most popular",
+      "subtitle": "Instant answers on your site, 24/7.",
+      "bullets": [
+        "Handles product and service questions automatically",
+        "Trained on your business info and FAQs",
+        "Captures leads and customer intent"
+      ]
+    },
+    "voiceAgent": {
+      "title": "Website + AI Voice Agent",
+      "badge": "Calls",
+      "subtitle": "Reduce phone workload with automated call handling.",
+      "bullets": [
+        "Answers common questions and routes requests",
+        "Works best for simple flows (hours, availability, basic info)",
+        "Optional call summaries for your team"
+      ]
+    },
+    "fullIntegration": {
+      "title": "Full AI Integration",
+      "badge": "Complete",
+      "subtitle": "Website + chatbot + voice agent in one system.",
+      "bullets": [
+        "Unified customer experience across web + calls",
+        "More automation, less repetitive work",
+        "Ongoing improvement and monthly support"
+      ]
+    },
+    "stats": {
+      "fasterResponses": "Faster responses",
+      "fasterResponsesValue": "24/7",
+      "lessRepetitiveWork": "Less repetitive work",
+      "lessRepetitiveWorkValue": "Automated",
+      "betterExperience": "Better experience",
+      "betterExperienceValue": "Instant",
+      "setupTime": "Setup time",
+      "setupTimeValue": "Fast"
+    }
+  },
+  "howItWorks": {
+    "section": "HOW IT WORKS",
+    "title": "Simple setup. Fast launch. Ongoing optimization.",
+    "description": "We keep the process straightforward so you can start seeing results quickly — without technical headaches.",
+    "discovery": {
+      "step": "1",
+      "title": "Discovery",
+      "description": "We learn about your business, products/services, and common customer questions. Then we decide whether you need a chatbot, voice agent, or both."
+    },
+    "buildTrain": {
+      "step": "2",
+      "title": "Build & Train",
+      "description": "We build your website and configure the AI using your content (product lists, FAQs, policies). You review and we refine."
+    },
+    "launchImprove": {
+      "step": "3",
+      "title": "Launch & Improve",
+      "description": "We launch and monitor performance. With the monthly plan, we update content, improve responses, and keep everything running smoothly."
+    },
+    "deliverables": "What you get",
+    "deliverablesDesc": "Deliverables may vary by package — placeholders below for now.",
+    "website": {
+      "title": "Modern Website",
+      "description": "A clean, mobile-friendly website designed to convert visitors into customers."
+    },
+    "aiAssistant": {
+      "title": "AI Assistant Setup",
+      "description": "Chatbot and/or voice agent configured for your most common customer questions."
+    },
+    "monthlySupport": {
+      "title": "Monthly Support",
+      "description": "Ongoing updates, improvements, and maintenance (optional but recommended)."
+    },
+    "cta": "Want to see how this would work for your business?",
+    "ctaDesc": "We'll show a quick demo and recommend the best setup."
+  },
+  "portfolio": {
+    "section": "PORTFOLIO",
+    "title": "Featured project",
+    "description": "A real example of a business website with an integrated AI chatbot experience.",
+    "visitWebsite": "Visit website",
+    "getDemo": "Get a free demo",
+    "japantok": {
+      "pills": {
+        "website": "Website",
+        "chatbot": "AI Chatbot",
+        "productQA": "Product Q&A",
+        "availability": "24/7 Responses"
+      },
+      "link": "Link:",
+      "title": "JapanTok Mongolia — AI-assisted product support",
+      "description": "We built a modern website and integrated an AI chatbot trained on the business's product list and common customer questions. The goal is to help customers find information quickly and reduce repetitive support work.",
+      "whatWeBuilt": "What we built",
+      "features": [
+        "Business website (mobile-friendly)",
+        "AI chatbot trained on products/FAQs",
+        "Conversation flow for product inquiries"
+      ],
+      "idealOutcomes": "Ideal outcomes",
+      "outcomes": [
+        "Faster answers for customers",
+        "Less repetitive questions for staff",
+        "More leads captured via the website"
+      ],
+      "buttons": {
+        "requestDemo": "Request a demo",
+        "viewLive": "View live site"
+      }
+    }
+  },
+  "pricing": {
+    "section": "PRICE QUOTE",
+    "title": "Simple pricing, clear value",
+    "description": "One-time website and AI setup, plus a monthly AI usage fee. No hidden costs.",
+    "oneTimeSetup": "One-time setup",
+    "promoBadge": "Valid for 7 days",
+    "cards": {
+      "website": {
+        "title": "Smart Website",
+        "badge": "One-time",
+        "price": "750,000₮",
+        "subLine": "Modern design • 5 pages • Mobile responsive • Admin panel",
+        "description": "A clean, modern website for your business.",
+        "bullets": [
+          "Modern design (UI/UX)",
+          "5 core pages (Home, About, Contact, etc.)",
+          "Mobile responsive",
+          "Admin section to manage content"
+        ],
+        "cta": "Get started"
+      },
+      "chatbot": {
+        "title": "AI Chatbot Setup",
+        "badge": "50% OFF",
+        "price": "195,000₮",
+        "subLine": "Facebook Messenger • Trained on your business info • 24/7 replies",
+        "description": "Automate customer questions with a trained chatbot.",
+        "bullets": [
+          "Facebook Messenger connection",
+          "Trained on your business info",
+          "24/7 auto replies"
+        ],
+        "cta": "Request a demo"
+      },
+      "voice": {
+        "title": "AI Receptionist",
+        "badge": "One-time",
+        "price": "590,000₮",
+        "subLine": "24/7 phone answering • Appointment booking • Voice AI trained on your info",
+        "description": "A voice agent that answers calls and handles basic workflows.",
+        "bullets": [
+          "Answers phone calls 24/7",
+          "Appointment booking & scheduling",
+          "Voice AI trained on your business info"
+        ],
+        "cta": "Talk to us"
+      },
+      "combo": {
+        "title": "COMBO OFFER",
+        "badge": "Best value",
+        "price": "945,000₮",
+        "subLine": "Website + AI Chatbot package",
+        "description": "Launch your website and chatbot together for the best value.",
+        "bullets": [
+          "Smart Website included",
+          "AI Chatbot Setup included",
+          "Best overall value"
+        ],
+        "cta": "Choose combo"
+      }
+    },
+    "monthly": {
+      "title": "Monthly packages",
+      "description": "Monthly plans cover server/API costs and ongoing support.",
+      "chatbot": {
+        "title": "AI Chatbot — Monthly plans",
+        "description": "Basic for stable info, Growth for frequently changing promos/prices.",
+        "table": {
+          "headers": {
+            "feature": "Feature",
+            "basic": "Basic — 100,000₮ / mo",
+            "growth": "Growth — 200,000₮ / mo"
+          },
+          "rows": {
+            "server": {
+              "feature": "Server & API costs",
+              "basic": "✅ Included",
+              "growth": "✅ Included"
+            },
+            "dataUpdates": {
+              "feature": "Data updates",
+              "basic": "1× / month",
+              "growth": "Unlimited"
+            },
+            "support": {
+              "feature": "Technical support",
+              "basic": "Chat & Email",
+              "growth": "Priority phone support"
+            },
+            "monitoring": {
+              "feature": "System monitoring",
+              "basic": "Normal monitoring",
+              "growth": "Weekly detailed monitoring"
+            }
+          }
+        },
+        "tip": "Tip: start with Basic and upgrade anytime.",
+        "cta": "Ask about chatbot plans"
+      },
+      "receptionist": {
+        "title": "AI Receptionist — Monthly plans",
+        "description": "Standard for essentials, Premium for fine-tuning + analytics.",
+        "standard": {
+          "title": "Standard",
+          "price": "200,000₮ / mo",
+          "features": [
+            "Server & API costs included",
+            "24/7 system monitoring",
+            "Data update: 1× / month",
+            "Basic technical support"
+          ]
+        },
+        "premium": {
+          "title": "Premium",
+          "price": "300,000₮ / mo",
+          "features": [
+            "Everything in Standard",
+            "AI fine-tuning & prompt optimization",
+            "Detailed monthly analytics report",
+            "Priority support (fast response)"
+          ]
+        },
+        "cta": "Ask about receptionist plans"
+      }
+    },
+    "paymentTerms": {
+      "title": "Payment terms",
+      "terms": [
+        "50% upfront when the contract is signed",
+        "50% after completion and handover",
+        "Delivery: within 7–10 working days from start"
+      ],
+      "note": "Want a tailored quote? Tell us your business type and what you want to automate.",
+      "cta": "Get a free demo"
+    }
+  },
+  "faq": {
+    "section": "FAQ",
+    "title": "Common questions",
+    "description": "Answers to the most common questions about our websites and AI solutions.",
+    "q1": {
+      "question": "What type of businesses is this for?",
+      "answer": "Small and medium businesses, stores, service centers, auto parts shops, clinics, and organizations that frequently receive customer inquiries."
+    },
+    "q2": {
+      "question": "Do I need technical knowledge?",
+      "answer": "No. We handle all configuration and installation. You only need simple admin access to edit your content."
+    },
+    "q3": {
+      "question": "Why is there a monthly AI fee?",
+      "answer": "The AI system has ongoing costs for servers, usage, and monitoring, so a monthly fee is required."
+    },
+    "q4": {
+      "question": "Can the AI replace staff?",
+      "answer": "AI only answers repetitive, simple questions. It does not completely replace human involvement."
+    },
+    "q5": {
+      "question": "Can the AI replace my staff?",
+      "answer": "The AI is designed to handle repetitive and basic questions. It reduces workload but does not replace human staff for complex or sensitive cases."
+    },
+    "q6": {
+      "question": "How long does setup take?",
+      "answer": "Website delivery usually takes 7–10 days. AI setup and training are completed alongside the website build."
+    },
+    "stillHaveQuestions": "Still have questions?",
+    "contactPrompt": "We're happy to explain everything in a short call or demo.",
+    "talkToUs": "Talk to us"
+  },
+  "contact": {
+    "sectionLabel": "CONTACT",
+    "title": "Get a free demo",
+    "description": "Tell us about your business and we'll recommend the simplest setup that saves time and reduces repetitive work.",
+    "form": {
+      "title": "Request a demo",
+      "description": "Fill this out and we'll get back to you shortly.",
+      "nameLabel": "Your name",
+      "namePlaceholder": "e.g. Nury",
+      "businessLabel": "Business name",
+      "businessPlaceholder": "e.g. JapanTok Mongolia",
+      "phoneLabel": "Phone / WhatsApp",
+      "phonePlaceholder": "Optional",
+      "serviceLabel": "Interested in",
+      "serviceOptions": {
+        "websiteOnly": "Website (only)",
+        "websiteChatbot": "Website + AI Chatbot",
+        "chatbotOnly": "AI Chatbot (only)",
+        "websiteVoice": "Website + AI Voice Agent",
+        "websiteBoth": "Website + Chatbot + Voice Agent"
+      },
+      "messageLabel": "Message",
+      "messagePlaceholder": "What questions do customers ask you the most?",
+      "submitButton": "Submit",
+      "consentText": "By submitting, you agree we can contact you about your request.",
+      "facebookButton": "Message us on Facebook",
+      "emailButton": "Email us",
+      "successMessage": "Thank you! We've received your request and will get back to you soon.",
+      "errorMessage": "There was an error submitting your form. Please try again or email us directly at dalatech.ai@gmail.com"
+    },
+    "steps": {
+      "step1": {
+        "title": "1) Quick discovery",
+        "description": "We learn about your business, your products/services, and the top 10 questions customers ask."
+      },
+      "step2": {
+        "title": "2) Build + AI setup",
+        "description": "We build the website and configure the AI chatbot (and/or voice agent) using your real business data."
+      },
+      "step3": {
+        "title": "3) Launch + improvement",
+        "description": "We launch and help you improve responses over time. With a monthly plan, we keep everything updated."
+      }
+    },
+    "responseTime": {
+      "title": "Fast response",
+      "description": "We usually reply within 24 hours. If you need urgent help, message us on Facebook."
+    }
+  }
+}

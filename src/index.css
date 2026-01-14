@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --cursor-emoji: url("/cursor-default.png") 4 6;
+  --cursor-emoji-excited: url("/cursor-hover.png") 6 8;
+}
+
+section {
+  scroll-margin-top: 90px; /* fixes sticky navbar covering headings */
+}
+body {
+  background: #fafafa;
+  cursor: var(--cursor-emoji), auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+input,
+textarea,
+select {
+  cursor: text;
+}
+
+.cta-emoji {
+  cursor: var(--cursor-emoji), pointer;
+}
+
+.cta-emoji:hover,
+.cta-emoji:focus-visible,
+.cta-emoji:active {
+  cursor: var(--cursor-emoji-excited), pointer;
+}
