@@ -144,7 +144,7 @@
       "website": {
         "title": "Smart Website",
         "badge": "One-time",
-        "price": "750,000₮",
+        "price": "600,000₮",
         "subLine": "Modern design • 5 pages • Mobile responsive • Admin panel",
         "description": "A clean, modern website for your business.",
         "bullets": [
@@ -205,7 +205,7 @@
           "headers": {
             "feature": "Feature",
             "basic": "Basic — 100,000₮ / mo",
-            "growth": "Growth — 200,000₮ / mo"
+            "growth": "Growth — 150,000₮ / mo"
           },
           "rows": {
             "server": {
@@ -238,7 +238,7 @@
         "description": "Standard for essentials, Premium for fine-tuning + analytics.",
         "standard": {
           "title": "Standard",
-          "price": "200,000₮ / mo",
+          "price": "150,000₮ / mo",
           "features": [
             "Server & API costs included",
             "24/7 system monitoring",
@@ -248,7 +248,7 @@
         },
         "premium": {
           "title": "Premium",
-          "price": "300,000₮ / mo",
+          "price": "250,000₮ / mo",
           "features": [
             "Everything in Standard",
             "AI fine-tuning & prompt optimization",
