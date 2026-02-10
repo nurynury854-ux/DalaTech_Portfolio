@@ -1413,7 +1413,7 @@ function Chatbot() {
   );
 }
 
-function Footer() {
+function Footer({ onOpenPrivacy }) {
   return (
     <footer className="border-t border-zinc-200 py-10">
       <Container>
@@ -1422,7 +1422,13 @@ function Footer() {
             {new Date().getFullYear()} DalaTech. Owned and operated by Tserentsoodol Bilguun.
           </div>
           <div className="flex gap-4 text-sm text-zinc-600">
-            <a className="hover:text-zinc-950" href="#privacy-terms">Privacy&Terms</a>
+            <button
+              type="button"
+              onClick={onOpenPrivacy}
+              className="hover:text-zinc-950"
+            >
+              Privacy&Terms
+            </button>
           </div>
         </div>
       </Container>
@@ -1430,27 +1436,59 @@ function Footer() {
   );
 }
 
-function PrivacyTerms() {
+function PrivacyTermsModal({ isOpen, onClose }) {
+  React.useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [isOpen, onClose]);
+
+  if (!isOpen) return null;
+
   return (
-    <section id="privacy-terms" className="scroll-mt-24 border-t border-zinc-200 py-16">
-      <Container>
-        <div className="max-w-3xl space-y-6">
+    <div className="fixed inset-0 z-[100000] flex items-center justify-center p-4">
+      <button
+        type="button"
+        aria-label="Close Privacy Policy and Terms"
+        className="absolute inset-0 bg-black/40 backdrop-blur-sm"
+        onClick={onClose}
+      />
+      <div className="relative z-10 w-full max-w-3xl rounded-2xl border border-zinc-200 bg-white p-6 shadow-2xl">
+        <div className="flex items-start justify-between gap-4">
           <div className="space-y-1">
             <h2 className="text-2xl font-semibold tracking-tight text-zinc-950">Privacy Policy & Terms of Service</h2>
             <p className="text-sm text-zinc-600">Effective Date: February 10, 2026</p>
           </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-full border border-zinc-200 px-3 py-1 text-sm font-medium text-zinc-700 hover:text-zinc-950"
+          >
+            Close
+          </button>
+        </div>
 
+        <div className="mt-6 max-h-[70vh] space-y-6 overflow-y-auto pr-2 text-sm text-zinc-600">
           <div className="space-y-3">
             <h3 className="text-lg font-semibold text-zinc-950">1. Introduction</h3>
-            <p className="text-sm text-zinc-600">
+            <p>
               Welcome to DalaTech.ai ("we," "our," or "us"). This service is owned and operated by Tserentsoodol Bilguun (Sole Proprietorship), registered in Mongolia. By accessing or using our Facebook Messenger chatbot, you agree to these Terms and our Privacy Policy.
             </p>
           </div>
 
           <div className="space-y-3">
             <h3 className="text-lg font-semibold text-zinc-950">2. Privacy Policy</h3>
-            <p className="text-sm text-zinc-600">We respect your privacy and are committed to protecting your personal data.</p>
-            <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-600">
+            <p>We respect your privacy and are committed to protecting your personal data.</p>
+            <ul className="list-disc space-y-2 pl-5">
               <li>Data We Collect: We collect your public Facebook profile information (name, profile picture) and the messages you send to our chatbot.</li>
               <li>How We Use Data: We use your messages solely to provide AI-generated responses via the Google Gemini API. We do not use your data for advertising or marketing purposes without your consent.</li>
               <li>Data Sharing: Your message data is processed by Google's AI services to generate replies but is not shared with any other third parties or sold.</li>
@@ -1460,7 +1498,7 @@ function PrivacyTerms() {
 
           <div className="space-y-3">
             <h3 className="text-lg font-semibold text-zinc-950">3. Terms of Service</h3>
-            <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-600">
+            <ul className="list-disc space-y-2 pl-5">
               <li>Usage: You agree to use this chatbot only for lawful purposes. You must not send harmful, offensive, or illegal content.</li>
               <li>Liability: The AI responses are generated automatically. Tserentsoodol Bilguun and DalaTech.ai are not liable for any inaccuracies in the AI's answers.</li>
               <li>Termination: We reserve the right to block any user who violates these terms.</li>
@@ -1469,17 +1507,19 @@ function PrivacyTerms() {
 
           <div className="space-y-3">
             <h3 className="text-lg font-semibold text-zinc-950">4. Contact Information</h3>
-            <p className="text-sm text-zinc-600">
+            <p>
               Owner: Tserentsoodol Bilguun Address: Khan-Uul, Artsat apartment, 801, Ulaanbaatar, Mongolia Phone: +976 99273339 Email: bilguunbilly0214@gmail.com
             </p>
           </div>
         </div>
-      </Container>
-    </section>
+      </div>
+    </div>
   );
 }
 
 export default function App() {
+  const [isPrivacyOpen, setIsPrivacyOpen] = React.useState(false);
+
   React.useEffect(() => {
   document.documentElement.style.scrollBehavior = "smooth";
   return () => {
@@ -1499,10 +1539,10 @@ export default function App() {
         <Pricing />
         <FAQ />
         <Contact />
-        <PrivacyTerms />
       </main>
 
-      <Footer />
+      <Footer onOpenPrivacy={() => setIsPrivacyOpen(true)} />
+      <PrivacyTermsModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
       <Chatbot />
     </div>
   );
