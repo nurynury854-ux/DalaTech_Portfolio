@@ -1419,15 +1419,63 @@ function Footer() {
       <Container>
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="text-sm text-zinc-600">
-            © {new Date().getFullYear()} DalaTech. All rights reserved.
+            {new Date().getFullYear()} DalaTech. Owned and operated by Tserentsoodol Bilguun.
           </div>
           <div className="flex gap-4 text-sm text-zinc-600">
-            <a className="hover:text-zinc-950" href="#!">Privacy</a>
-            <a className="hover:text-zinc-950" href="#!">Terms</a>
+            <a className="hover:text-zinc-950" href="#privacy-terms">Privacy&Terms</a>
           </div>
         </div>
       </Container>
     </footer>
+  );
+}
+
+function PrivacyTerms() {
+  return (
+    <section id="privacy-terms" className="scroll-mt-24 border-t border-zinc-200 py-16">
+      <Container>
+        <div className="max-w-3xl space-y-6">
+          <div className="space-y-1">
+            <h2 className="text-2xl font-semibold tracking-tight text-zinc-950">Privacy Policy & Terms of Service</h2>
+            <p className="text-sm text-zinc-600">Effective Date: February 10, 2026</p>
+          </div>
+
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold text-zinc-950">1. Introduction</h3>
+            <p className="text-sm text-zinc-600">
+              Welcome to DalaTech.ai ("we," "our," or "us"). This service is owned and operated by Tserentsoodol Bilguun (Sole Proprietorship), registered in Mongolia. By accessing or using our Facebook Messenger chatbot, you agree to these Terms and our Privacy Policy.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold text-zinc-950">2. Privacy Policy</h3>
+            <p className="text-sm text-zinc-600">We respect your privacy and are committed to protecting your personal data.</p>
+            <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-600">
+              <li>Data We Collect: We collect your public Facebook profile information (name, profile picture) and the messages you send to our chatbot.</li>
+              <li>How We Use Data: We use your messages solely to provide AI-generated responses via the Google Gemini API. We do not use your data for advertising or marketing purposes without your consent.</li>
+              <li>Data Sharing: Your message data is processed by Google's AI services to generate replies but is not shared with any other third parties or sold.</li>
+              <li>Data Deletion: If you wish to delete your data from our system, please contact us at bilguunbilly0214@gmail.com or reply "DELETE" in the chat.</li>
+            </ul>
+          </div>
+
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold text-zinc-950">3. Terms of Service</h3>
+            <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-600">
+              <li>Usage: You agree to use this chatbot only for lawful purposes. You must not send harmful, offensive, or illegal content.</li>
+              <li>Liability: The AI responses are generated automatically. Tserentsoodol Bilguun and DalaTech.ai are not liable for any inaccuracies in the AI's answers.</li>
+              <li>Termination: We reserve the right to block any user who violates these terms.</li>
+            </ul>
+          </div>
+
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold text-zinc-950">4. Contact Information</h3>
+            <p className="text-sm text-zinc-600">
+              Owner: Tserentsoodol Bilguun Address: Khan-Uul, Artsat apartment, 801, Ulaanbaatar, Mongolia Phone: +976 99273339 Email: bilguunbilly0214@gmail.com
+            </p>
+          </div>
+        </div>
+      </Container>
+    </section>
   );
 }
 
@@ -1451,6 +1499,7 @@ export default function App() {
         <Pricing />
         <FAQ />
         <Contact />
+        <PrivacyTerms />
       </main>
 
       <Footer />
