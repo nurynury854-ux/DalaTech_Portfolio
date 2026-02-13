@@ -1419,7 +1419,7 @@ function Footer({ onOpenPrivacy }) {
       <Container>
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="text-sm text-zinc-600">
-            {new Date().getFullYear()} DalaTech. Owned and operated by Tserentsoodol Bilguun.
+            {new Date().getFullYear()} DalaTech.
           </div>
           <div className="flex gap-4 text-sm text-zinc-600">
             <button
