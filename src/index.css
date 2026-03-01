@@ -16,6 +16,9 @@ section {
 body {
   background: #fafafa;
   cursor: var(--cursor-emoji), auto;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", "PingFang TC",
+    "Microsoft JhengHei", sans-serif;
 }
 html {
   scroll-behavior: smooth;

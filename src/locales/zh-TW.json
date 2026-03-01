@@ -1,0 +1,354 @@
+{
+  "nav": {
+    "brand": "DalaTech",
+    "features": "功能特色",
+    "howItWorks": "運作方式",
+    "portfolio": "作品集",
+    "pricing": "價格方案",
+    "faq": "常見問題",
+    "contact": "聯絡我們",
+    "getDemo": "免費試用示範"
+  },
+  "hero": {
+    "badge": "AI 驅動的企業網站",
+    "title": "專業網站，內建 AI 聊天機器人與語音助理。",
+    "description": "自動回答重複性的客戶問題，24/7 即時回應，在不增加人力的情況下減少工作負擔。專為中小企業及成長中的團隊設計。",
+    "buttons": {
+      "getDemo": "免費試用示範",
+      "seeWork": "瀏覽我們的作品"
+    },
+    "tech": "採用現代技術打造"
+  },
+  "features": {
+    "section": "功能特色",
+    "title": "自動化客戶溝通所需的一切",
+    "description": "我們打造整合 AI 的現代化網站，自動處理常見問題、產品諮詢及基本客服，讓您的團隊專注於更重要的事情。",
+    "chatbot": {
+      "title": "網站 + AI 聊天機器人",
+      "badge": "最受歡迎",
+      "subtitle": "24/7 在您的網站上即時回應。",
+      "bullets": [
+        "自動回答產品與服務相關問題",
+        "根據您的業務資訊與常見問題進行訓練",
+        "收集潛在客戶與購買意向"
+      ]
+    },
+    "voiceAgent": {
+      "title": "網站 + AI 語音助理",
+      "badge": "電話服務",
+      "subtitle": "透過自動化電話處理減少電話工作量。",
+      "bullets": [
+        "回答常見問題並轉接請求",
+        "最適合簡單流程（營業時間、庫存、基本資訊）",
+        "可選擇提供通話摘要給您的團隊"
+      ]
+    },
+    "fullIntegration": {
+      "title": "完整 AI 整合方案",
+      "badge": "完整版",
+      "subtitle": "網站 + 聊天機器人 + 語音助理一體化系統。",
+      "bullets": [
+        "網站與電話的統一客戶體驗",
+        "更多自動化，更少重複性工作",
+        "持續優化與每月技術支援"
+      ]
+    },
+    "stats": {
+      "fasterResponses": "更快速的回應",
+      "fasterResponsesValue": "24/7",
+      "lessRepetitiveWork": "減少重複性工作",
+      "lessRepetitiveWorkValue": "全自動化",
+      "betterExperience": "更好的客戶體驗",
+      "betterExperienceValue": "即時回應",
+      "setupTime": "建置時間",
+      "setupTimeValue": "快速"
+    }
+  },
+  "howItWorks": {
+    "section": "運作方式",
+    "title": "簡單設置。快速上線。持續優化。",
+    "description": "我們讓整個流程簡單明瞭，讓您能在短時間內看到成效，不需要處理技術難題。",
+    "discovery": {
+      "step": "1",
+      "title": "需求探索",
+      "description": "我們深入了解您的業務、產品／服務及客戶常見問題，然後決定您需要聊天機器人、語音助理，還是兩者都需要。"
+    },
+    "buildTrain": {
+      "step": "2",
+      "title": "建置與訓練",
+      "description": "我們建立您的網站，並使用您的內容（產品清單、常見問題、政策）配置 AI。您審核後，我們再進行調整優化。"
+    },
+    "launchImprove": {
+      "step": "3",
+      "title": "上線與優化",
+      "description": "我們上線並監控效能。選擇月費方案後，我們會持續更新內容、改善回應品質，確保系統穩定運行。"
+    },
+    "deliverables": "您將獲得什麼",
+    "deliverablesDesc": "交付項目因方案而異，以下為示例說明。",
+    "website": {
+      "title": "現代化網站",
+      "description": "設計簡潔、適合行動裝置的網站，協助將訪客轉化為客戶。"
+    },
+    "aiAssistant": {
+      "title": "AI 助理設置",
+      "description": "針對您最常見的客戶問題，配置聊天機器人和／或語音助理。"
+    },
+    "monthlySupport": {
+      "title": "每月技術支援",
+      "description": "持續的更新、優化與維護服務（可選，建議採用）。"
+    },
+    "cta": "想了解這如何為您的業務運作？",
+    "ctaDesc": "我們將為您展示快速示範，並推薦最適合的設置方案。"
+  },
+  "portfolio": {
+    "section": "作品集",
+    "title": "精選專案",
+    "description": "一個整合 AI 聊天機器人的企業網站實際案例。",
+    "visitWebsite": "造訪網站",
+    "getDemo": "免費試用示範",
+    "japantok": {
+      "pills": {
+        "website": "網站",
+        "chatbot": "AI 聊天機器人",
+        "productQA": "產品問答",
+        "availability": "24/7 即時回應"
+      },
+      "link": "連結：",
+      "title": "JapanTok Mongolia — AI 輔助產品客服",
+      "description": "我們建立了一個現代化網站，並整合了根據業務產品清單和常見客戶問題訓練的 AI 聊天機器人。目標是幫助客戶快速找到資訊，並減少重複性客服工作。",
+      "whatWeBuilt": "我們建置了什麼",
+      "features": [
+        "企業網站（適合行動裝置）",
+        "根據產品／常見問題訓練的 AI 聊天機器人",
+        "針對產品諮詢的對話流程"
+      ],
+      "idealOutcomes": "預期成效",
+      "outcomes": [
+        "為客戶提供更快速的解答",
+        "減少員工處理重複問題的工作量",
+        "透過網站獲取更多潛在客戶"
+      ],
+      "buttons": {
+        "requestDemo": "申請試用示範",
+        "viewLive": "查看上線網站"
+      }
+    }
+  },
+  "pricing": {
+    "section": "報價方案",
+    "title": "透明定價，清晰價值",
+    "description": "一次性網站與 AI 建置費用，加上每月 AI 使用費。無隱藏費用。",
+    "oneTimeSetup": "一次性設置費用",
+    "promoBadge": "限時 7 天有效",
+    "cards": {
+      "website": {
+        "title": "智慧型網站",
+        "badge": "一次性",
+        "price": "750,000₮",
+        "subLine": "現代化設計 • 5 頁面 • 適合行動裝置 • 後台管理系統",
+        "description": "為您的業務打造簡潔現代的網站。",
+        "bullets": [
+          "現代化設計（UI/UX）",
+          "5 個核心頁面（首頁、關於我們、聯絡我們等）",
+          "適合行動裝置",
+          "內容管理後台"
+        ],
+        "cta": "立即開始"
+      },
+      "chatbot": {
+        "title": "AI 聊天機器人設置",
+        "badge": "五折優惠",
+        "price": "195,000₮",
+        "subLine": "Facebook Messenger • 根據您的業務資訊訓練 • 24/7 自動回覆",
+        "description": "使用訓練好的聊天機器人自動化客戶問答。",
+        "bullets": [
+          "連接 Facebook Messenger",
+          "根據您的業務資訊訓練",
+          "24/7 自動回覆"
+        ],
+        "cta": "申請試用示範"
+      },
+      "voice": {
+        "title": "AI 語音接待員",
+        "badge": "一次性",
+        "price": "590,000₮",
+        "subLine": "24/7 電話接聽 • 預約排程 • 根據您資訊訓練的語音 AI",
+        "description": "接聽電話並處理基本工作流程的語音助理。",
+        "bullets": [
+          "24/7 接聽電話",
+          "預約與排程管理",
+          "根據您業務資訊訓練的語音 AI"
+        ],
+        "cta": "與我們聯繫"
+      },
+      "combo": {
+        "title": "組合優惠方案",
+        "badge": "最超值",
+        "price": "945,000₮",
+        "subLine": "網站 + AI 聊天機器人組合",
+        "description": "同時上線網站和聊天機器人，取得最超值的組合價。",
+        "bullets": [
+          "包含智慧型網站",
+          "包含 AI 聊天機器人設置",
+          "整體最超值方案"
+        ],
+        "cta": "選擇組合方案"
+      }
+    },
+    "monthly": {
+      "title": "每月訂閱方案",
+      "description": "每月方案涵蓋伺服器／API 費用及持續支援服務。",
+      "chatbot": {
+        "title": "AI 聊天機器人 — 每月方案",
+        "description": "基本版適合資訊穩定的業務，成長版適合促銷和價格頻繁變動的業務。",
+        "table": {
+          "headers": {
+            "feature": "功能",
+            "basic": "基本版 — 70,000₮ / 月",
+            "growth": "成長版 — 120,000₮ / 月"
+          },
+          "rows": {
+            "server": {
+              "feature": "伺服器與 API 費用",
+              "basic": "✅ 已包含",
+              "growth": "✅ 已包含"
+            },
+            "dataUpdates": {
+              "feature": "資料更新",
+              "basic": "每月 1 次",
+              "growth": "無限次"
+            },
+            "support": {
+              "feature": "技術支援",
+              "basic": "即時通訊和電子郵件",
+              "growth": "優先電話支援"
+            },
+            "monitoring": {
+              "feature": "系統監控",
+              "basic": "一般監控",
+              "growth": "每週詳細監控報告"
+            }
+          }
+        },
+        "tip": "建議：先從基本版開始，隨時可升級。",
+        "cta": "詢問聊天機器人方案"
+      },
+      "receptionist": {
+        "title": "AI 語音接待員 — 每月方案",
+        "description": "標準版涵蓋基本需求，進階版提供深度調整與數據分析。",
+        "standard": {
+          "title": "標準版",
+          "price": "120,000₮ / 月",
+          "features": [
+            "包含伺服器與 API 費用",
+            "24/7 系統監控",
+            "資料更新：每月 1 次",
+            "基本技術支援"
+          ]
+        },
+        "premium": {
+          "title": "進階版",
+          "price": "250,000₮ / 月",
+          "features": [
+            "包含標準版所有功能",
+            "AI 深度調整與提示詞優化",
+            "每月詳細數據分析報告",
+            "優先支援服務（快速回應）"
+          ]
+        },
+        "cta": "詢問語音接待員方案"
+      }
+    },
+    "paymentTerms": {
+      "title": "付款條件",
+      "terms": [
+        "簽約時預付 50%",
+        "完成並交付後支付剩餘 50%",
+        "交付時程：開始後 7–10 個工作天"
+      ],
+      "note": "需要客製化報價？請告訴我們您的業務類型及希望自動化的項目。",
+      "cta": "免費試用示範"
+    }
+  },
+  "faq": {
+    "section": "常見問題",
+    "title": "常見問題",
+    "description": "關於我們網站和 AI 解決方案最常被問到的問題解答。",
+    "q1": {
+      "question": "這適合哪些類型的企業？",
+      "answer": "中小企業、零售商店、服務中心、汽車零件店、診所，以及經常收到客戶詢問的各類組織。"
+    },
+    "q2": {
+      "question": "需要具備技術知識嗎？",
+      "answer": "不需要。我們負責所有配置和安裝工作。您只需要擁有簡單的管理員權限來編輯內容即可。"
+    },
+    "q3": {
+      "question": "為什麼需要支付每月 AI 費用？",
+      "answer": "AI 系統需要持續的伺服器、使用量和監控費用，因此需要每月訂閱費用。"
+    },
+    "q4": {
+      "question": "AI 可以取代員工嗎？",
+      "answer": "AI 只負責回答重複性、簡單的問題，無法完全取代人工處理。"
+    },
+    "q5": {
+      "question": "AI 會取代我的員工嗎？",
+      "answer": "AI 的設計是處理重複性和基本問題，可以減少工作量，但對於複雜或敏感的情況，不會取代人工員工。"
+    },
+    "q6": {
+      "question": "設置需要多長時間？",
+      "answer": "網站通常在 7–10 個工作天內交付。AI 設置和訓練會與網站建置同步進行。"
+    },
+    "stillHaveQuestions": "還有其他問題？",
+    "contactPrompt": "我們很樂意透過簡短的電話或示範來為您解答所有問題。",
+    "talkToUs": "與我們聯繫"
+  },
+  "contact": {
+    "sectionLabel": "聯絡我們",
+    "title": "免費試用示範",
+    "description": "告訴我們您的業務狀況，我們將推薦最簡單的設置方案，幫助您節省時間並減少重複性工作。",
+    "form": {
+      "title": "申請示範",
+      "description": "填寫表單後，我們將盡快與您聯繫。",
+      "nameLabel": "您的姓名",
+      "namePlaceholder": "例如：王小明",
+      "businessLabel": "企業名稱",
+      "businessPlaceholder": "例如：JapanTok Mongolia",
+      "phoneLabel": "電話 / WhatsApp",
+      "phonePlaceholder": "選填",
+      "serviceLabel": "感興趣的服務",
+      "serviceOptions": {
+        "websiteOnly": "網站（僅限）",
+        "websiteChatbot": "網站 + AI 聊天機器人",
+        "chatbotOnly": "AI 聊天機器人（僅限）",
+        "websiteVoice": "網站 + AI 語音助理",
+        "websiteBoth": "網站 + 聊天機器人 + 語音助理"
+      },
+      "messageLabel": "留言",
+      "messagePlaceholder": "客戶最常問您什麼問題？",
+      "submitButton": "送出",
+      "consentText": "送出即代表您同意我們就您的請求與您聯繫。",
+      "facebookButton": "透過 Facebook 聯絡我們",
+      "emailButton": "發送電子郵件",
+      "successMessage": "感謝您！我們已收到您的申請，將盡快與您聯繫。",
+      "errorMessage": "表單送出時發生錯誤，請重試或直接發送電子郵件至 dalatech.ai@gmail.com"
+    },
+    "steps": {
+      "step1": {
+        "title": "1) 快速需求了解",
+        "description": "我們將了解您的業務、產品／服務，以及客戶最常問的 10 個問題。"
+      },
+      "step2": {
+        "title": "2) 建置 + AI 設置",
+        "description": "我們建立網站，並使用您的真實業務數據配置 AI 聊天機器人（和／或語音助理）。"
+      },
+      "step3": {
+        "title": "3) 上線 + 持續優化",
+        "description": "我們上線後協助您持續改善回應品質。選擇月費方案後，所有內容都能保持最新狀態。"
+      }
+    },
+    "responseTime": {
+      "title": "快速回應",
+      "description": "我們通常在 24 小時內回覆。如有緊急需求，請透過 Facebook 聯絡我們。"
+    }
+  }
+}

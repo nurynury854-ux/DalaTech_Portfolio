@@ -101,14 +101,21 @@ function SecondaryButton({ children, href = "#" }) {
   );
 }
 
+const LANGUAGES = [
+  { code: 'en',    label: 'English' },
+  { code: 'mn',    label: 'Монгол' },
+  { code: 'zh-TW', label: '繁體中文' },
+];
+
 function Navbar() {
   const { t, i18n } = useTranslation();
   const [active, setActive] = React.useState("features");
+  const [langOpen, setLangOpen] = React.useState(false);
 
-  const toggleLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'mn' : 'en';
-    i18n.changeLanguage(newLang);
-    localStorage.setItem('language', newLang);
+  const changeLanguage = (code) => {
+    i18n.changeLanguage(code);
+    localStorage.setItem('language', code);
+    setLangOpen(false);
   };
 
   React.useEffect(() => {
@@ -190,13 +197,48 @@ function Navbar() {
             >
               {t('nav.contact')}
             </a>
-            <button
-              onClick={toggleLanguage}
-              className="hidden sm:inline px-3 py-2 text-sm font-medium text-zinc-700 hover:text-zinc-900 transition-colors"
-              title="Toggle language"
+            {/* Globe language switcher */}
+            <div
+              className="relative"
+              onMouseEnter={() => setLangOpen(true)}
+              onMouseLeave={() => setLangOpen(false)}
             >
-              {i18n.language === 'en' ? 'MN' : 'EN'}
-            </button>
+              <button
+                onClick={() => setLangOpen((o) => !o)}
+                className="flex items-center justify-center rounded-xl border border-zinc-200 bg-white p-2 text-zinc-700 hover:text-zinc-900 hover:bg-zinc-50 transition-colors"
+                title="Select language"
+                aria-label="Select language"
+              >
+                {/* Globe icon */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </button>
+
+              {langOpen && (
+                <div className="absolute right-0 top-full mt-1 w-40 rounded-xl border border-zinc-200 bg-white py-1 shadow-lg z-50">
+                  {LANGUAGES.map(({ code, label }) => (
+                    <button
+                      key={code}
+                      onClick={() => changeLanguage(code)}
+                      className={[
+                        "w-full px-4 py-2 text-left text-sm transition-colors hover:bg-zinc-50",
+                        i18n.language === code
+                          ? "font-semibold text-zinc-950"
+                          : "font-medium text-zinc-600",
+                      ].join(" ")}
+                    >
+                      {i18n.language === code && (
+                        <span className="mr-1.5 inline-block h-1.5 w-1.5 rounded-full bg-zinc-900 align-middle" />
+                      )}
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
             <PrimaryButton href="#contact">{t('nav.getDemo')}</PrimaryButton>
           </div>
         </div>
