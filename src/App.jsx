@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Setup from "./Setup";
 
 function useInView(options = { threshold: 0.15 }) {
   const ref = React.useRef(null);
@@ -1561,13 +1562,33 @@ function PrivacyTermsModal({ isOpen, onClose }) {
 
 export default function App() {
   const [isPrivacyOpen, setIsPrivacyOpen] = React.useState(false);
+  const [currentPage, setCurrentPage] = React.useState("home");
 
   React.useEffect(() => {
-  document.documentElement.style.scrollBehavior = "smooth";
-  return () => {
-    document.documentElement.style.scrollBehavior = "auto";
-  };
-}, []);
+    document.documentElement.style.scrollBehavior = "smooth";
+    return () => {
+      document.documentElement.style.scrollBehavior = "auto";
+    };
+  }, []);
+
+  React.useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash === "#/setup") {
+        setCurrentPage("setup");
+      } else {
+        setCurrentPage("home");
+      }
+    };
+
+    handleHashChange();
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
+  if (currentPage === "setup") {
+    return <Setup />;
+  }
 
   return (
     <div className="min-h-screen bg-white text-zinc-950">
