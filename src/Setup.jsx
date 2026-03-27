@@ -9,7 +9,7 @@ export default function Setup() {
     // Load Facebook SDK
     window.fbAsyncInit = function () {
       FB.init({
-        appId: 'YOUR_APP_ID_HERE',
+        appId: '3389578771194367',
         xfbml: true,
         version: 'v18.0'
       });
@@ -68,7 +68,7 @@ export default function Setup() {
 
           <div className="bg-zinc-50 rounded-xl p-4 mb-8">
             <p className="text-xs text-zinc-500 font-mono break-all">
-              App ID: YOUR_APP_ID_HERE
+              App ID: 3389578771194367
             </p>
           </div>
 
