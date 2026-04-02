@@ -84,7 +84,7 @@ function PrimaryButton({ children, href = "#" }) {
   return (
     <a
       href={href}
-      className="cta-emoji relative inline-flex items-center justify-center rounded-xl bg-zinc-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-zinc-800 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-zinc-900/20"
+      className="cta-emoji relative inline-flex items-center justify-center rounded-xl bg-zinc-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-zinc-800 active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-zinc-900/20"
     >
       {children}
     </a>
@@ -95,7 +95,7 @@ function SecondaryButton({ children, href = "#" }) {
   return (
     <a
       href={href}
-      className="cta-emoji inline-flex items-center justify-center rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-900 shadow-sm transition-all duration-200 hover:bg-zinc-50 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-zinc-900/10"
+      className="cta-emoji inline-flex items-center justify-center rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-900 shadow-sm transition-all duration-200 hover:bg-zinc-50 active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-zinc-900/10"
     >
       {children}
     </a>
@@ -112,12 +112,39 @@ function Navbar() {
   const { t, i18n } = useTranslation();
   const [active, setActive] = React.useState("features");
   const [langOpen, setLangOpen] = React.useState(false);
+  const langCloseTimerRef = React.useRef(null);
+
+  const clearLangCloseTimer = React.useCallback(() => {
+    if (langCloseTimerRef.current) {
+      window.clearTimeout(langCloseTimerRef.current);
+      langCloseTimerRef.current = null;
+    }
+  }, []);
+
+  const openLangMenu = React.useCallback(() => {
+    clearLangCloseTimer();
+    setLangOpen(true);
+  }, [clearLangCloseTimer]);
+
+  const scheduleLangMenuClose = React.useCallback(() => {
+    clearLangCloseTimer();
+    langCloseTimerRef.current = window.setTimeout(() => {
+      setLangOpen(false);
+    }, 180);
+  }, [clearLangCloseTimer]);
 
   const changeLanguage = (code) => {
+    clearLangCloseTimer();
     i18n.changeLanguage(code);
     localStorage.setItem('language', code);
     setLangOpen(false);
   };
+
+  React.useEffect(() => {
+    return () => {
+      clearLangCloseTimer();
+    };
+  }, [clearLangCloseTimer]);
 
   React.useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
@@ -201,11 +228,14 @@ function Navbar() {
             {/* Globe language switcher */}
             <div
               className="relative"
-              onMouseEnter={() => setLangOpen(true)}
-              onMouseLeave={() => setLangOpen(false)}
+              onMouseEnter={openLangMenu}
+              onMouseLeave={scheduleLangMenuClose}
             >
               <button
-                onClick={() => setLangOpen((o) => !o)}
+                onClick={() => {
+                  clearLangCloseTimer();
+                  setLangOpen((o) => !o);
+                }}
                 className="flex items-center justify-center rounded-xl border border-zinc-200 bg-white p-2 text-zinc-700 hover:text-zinc-900 hover:bg-zinc-50 transition-colors"
                 title="Select language"
                 aria-label="Select language"
@@ -219,7 +249,11 @@ function Navbar() {
               </button>
 
               {langOpen && (
-                <div className="absolute right-0 top-full mt-1 w-40 rounded-xl border border-zinc-200 bg-white py-1 shadow-lg z-50">
+                <div
+                  className="absolute right-0 top-full mt-1 w-40 rounded-xl border border-zinc-200 bg-white py-1 shadow-lg z-50"
+                  onMouseEnter={openLangMenu}
+                  onMouseLeave={scheduleLangMenuClose}
+                >
                   {LANGUAGES.map(({ code, label }) => (
                     <button
                       key={code}
@@ -365,7 +399,7 @@ function Hero() {
                 playsInline
                 preload="auto"
               >
-                <source src="/Videos/JapanTOK_VIdeo.MOV" type="video/mp4" />
+                <source src="/Videos/Matrix_Demo.mov" type="video/quicktime" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -1442,7 +1476,7 @@ function Chatbot() {
   return (
     <>
       <button id="dalatech-chat-toggle" aria-label="Open chat"
-        style={{position: 'fixed', bottom: '20px', right: '20px', zIndex: 99999, width: '60px', height: '60px', borderRadius: '50%', background: 'linear-gradient(135deg, #2B2B2B 0%, #1F1F1F 100%)', border: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.3)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: 0}}>
+        style={{position: 'fixed', bottom: '20px', right: '20px', zIndex: 99999, width: '60px', height: '60px', borderRadius: '50%', background: 'linear-gradient(135deg, #2B2B2B 0%, #1F1F1F 100%)', border: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.3)', cursor: 'var(--cursor-emoji), pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: 0}}>
         <img src="/Photos/dalatech-logo.png" alt="DalaTech Chat" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
       </button>
       <div id="dalatech-chatbot-container"

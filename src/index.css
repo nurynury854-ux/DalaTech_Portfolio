@@ -6,7 +6,7 @@ html {
 }
 
 :root {
-  --cursor-emoji: url("/cursor-default.png") 4 6;
+  --cursor-emoji: url("/cursor-default.png") 6 8;
   --cursor-emoji-excited: url("/cursor-hover.png") 6 8;
 }
 
@@ -28,6 +28,28 @@ input,
 textarea,
 select {
   cursor: text;
+}
+
+a,
+button,
+[role="button"],
+summary {
+  cursor: var(--cursor-emoji), pointer;
+}
+
+a:hover,
+a:focus-visible,
+a:active,
+button:hover,
+button:focus-visible,
+button:active,
+[role="button"]:hover,
+[role="button"]:focus-visible,
+[role="button"]:active,
+summary:hover,
+summary:focus-visible,
+summary:active {
+  cursor: var(--cursor-emoji-excited), pointer;
 }
 
 .cta-emoji {
