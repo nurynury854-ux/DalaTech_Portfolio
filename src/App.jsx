@@ -397,8 +397,10 @@ function Hero() {
                 loop
                 muted
                 playsInline
+                webkit-playsinline="true"
                 preload="auto"
               >
+                <source src="/Videos/Matrix_Demo.mov" type="video/mp4" />
                 <source src="/Videos/Matrix_Demo.mov" type="video/quicktime" />
                 Your browser does not support the video tag.
               </video>
