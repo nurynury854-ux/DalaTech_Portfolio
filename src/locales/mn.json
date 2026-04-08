@@ -204,8 +204,8 @@
         "table": {
           "headers": {
             "feature": "Онцлог",
-            "basic": "Үндсэн — 70,000₮ / сар",
-            "growth": "Өсөлт — 120,000₮ / сар"
+            "basic": "Үндсэн — 90,000₮ / сар",
+            "growth": "Өсөлт — 150,000₮ / сар"
           },
           "rows": {
             "server": {
@@ -313,8 +313,8 @@
       "namePlaceholder": "жишээ нь: Эрдэнэ",
       "businessLabel": "Бизнесийн нэр",
       "businessPlaceholder": "жишээ нь: JapanTok Mongolia",
-      "phoneLabel": "Утас / WhatsApp",
-      "phonePlaceholder": "Заавал биш",
+      "phoneLabel": "Утас",
+      "phonePlaceholder": "жишээ нь: 9999-9999",
       "serviceLabel": "Сонирхож буй үйлчилгээ",
       "serviceOptions": {
         "websiteOnly": "Вэбсайт (зөвхөн)",

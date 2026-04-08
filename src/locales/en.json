@@ -204,8 +204,8 @@
         "table": {
           "headers": {
             "feature": "Feature",
-            "basic": "Basic — 70,000₮ / mo",
-            "growth": "Growth — 120,000₮ / mo"
+            "basic": "Basic — 90,000₮ / mo",
+            "growth": "Growth — 150,000₮ / mo"
           },
           "rows": {
             "server": {
@@ -313,8 +313,8 @@
       "namePlaceholder": "e.g. Nury",
       "businessLabel": "Business name",
       "businessPlaceholder": "e.g. JapanTok Mongolia",
-      "phoneLabel": "Phone / WhatsApp",
-      "phonePlaceholder": "Optional",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "e.g., 9999-9999",
       "serviceLabel": "Interested in",
       "serviceOptions": {
         "websiteOnly": "Website (only)",

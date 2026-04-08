@@ -204,8 +204,8 @@
         "table": {
           "headers": {
             "feature": "功能",
-            "basic": "基本版 — 70,000₮ / 月",
-            "growth": "成長版 — 120,000₮ / 月"
+            "basic": "基本版 — 90,000₮ / 月",
+            "growth": "成長版 — 150,000₮ / 月"
           },
           "rows": {
             "server": {
@@ -313,8 +313,8 @@
       "namePlaceholder": "例如：王小明",
       "businessLabel": "企業名稱",
       "businessPlaceholder": "例如：JapanTok Mongolia",
-      "phoneLabel": "電話 / WhatsApp",
-      "phonePlaceholder": "選填",
+      "phoneLabel": "電話",
+      "phonePlaceholder": "例如：9999-9999",
       "serviceLabel": "感興趣的服務",
       "serviceOptions": {
         "websiteOnly": "網站（僅限）",
