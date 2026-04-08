@@ -1340,6 +1340,7 @@ function Contact() {
                   </label>
                   <input
                     name="phone"
+                    required
                     className="mt-2 w-full rounded-xl border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 outline-none focus:border-zinc-900"
                     placeholder={t('contact.form.phonePlaceholder')}
                   />
@@ -1400,7 +1401,7 @@ function Contact() {
                 {t('contact.form.facebookButton')}
               </a>
               <a
-                href="mailto:dalatech.team@gmail.com"
+                href="mailto:dalatech.ai@gmail.com"
                 className="rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-50"
               >
                 {t('contact.form.emailButton')}
